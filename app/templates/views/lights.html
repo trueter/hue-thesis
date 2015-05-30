@@ -1,0 +1,14 @@
+<ion-view view-title="Lights">
+  <ion-nav-bar class="bar-positive">
+    <ion-nav-buttons side="primary">
+      <button ng-click="sync()" class="button">Sync</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="light in lights"><span ng-bind="light.name"></span>
+        <div ng-style="getStyleFromState( light.state )" class="color-indicator"></div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

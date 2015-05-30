@@ -1,0 +1,892 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"MOZ",
+				"MOZ_SECRET_KEY"
+			],
+			[
+				"input",
+				"input{file}	latex-document"
+			],
+			[
+				"table",
+				"tableViewController"
+			],
+			[
+				"custom",
+				"custom_fields"
+			],
+			[
+				"background",
+				"background-repeat"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"border-",
+				"border-style"
+			],
+			[
+				"in",
+				"instances"
+			],
+			[
+				"check",
+				"checkForPushNotifications"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Primary Quick Build"
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Choose Quick Build"
+				],
+				[
+					"Packages/LaTeXing/LaTeX.sublime-build",
+					"Clean up Files"
+				],
+				[
+					"Packages/untitled folder/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/untitled folder/LaTeX.sublime-build",
+					"Primary Quick Build"
+				],
+				[
+					"Packages/untitled folder/LaTeX.sublime-build",
+					"Choose Quick Build"
+				],
+				[
+					"Packages/untitled folder/LaTeX.sublime-build",
+					"Clean up Files"
+				],
+				[
+					"Packages/User/Titanium Build/Titanium.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXing/LaTeX.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 164.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"coffe",
+				"Coffee: Compile File"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packe",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/torsten/htw/thesis/hue-thesis",
+		"/Users/torsten/htw/thesis/hue-thesis/app",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts"
+	],
+	"file_history":
+	[
+		"/Users/torsten/Library/Application Support/Sublime Text 3/Packages/User/CoffeeScript.sublime-settings",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/homeController.js",
+		"/Users/torsten/htw/thesis/hue-thesis/hue-thesis.sublime-project",
+		"/Users/torsten/htw/thesis/hue-thesis/app/templates/views/lights.html",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/lightsController.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/settingsController.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/services/ApiService.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/services/SpotifyService.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/services/HueService.coffee",
+		"/Users/torsten/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/mainController.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/homeController.coffee",
+		"/Users/torsten/Library/Application Support/Sublime Text 3/Packages/Better CoffeeScript/CoffeeScript.sublime-settings",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/app.js",
+		"/Users/torsten/pixsy/pixsy-test/models/match.coffee",
+		"/Users/torsten/pixsy/pixsy-test/migrate_pageranks.coffee",
+		"/Users/torsten/pixsy/pixsy-test/models/factor_weighing.notes.txt",
+		"/Users/torsten/pixsy/pixsy-test/moz.coffee",
+		"/Users/torsten/pixsy/pixsy-test/migrate2.coffee",
+		"/Users/torsten/pixsy/pixsy-test/pagerank.coffee",
+		"/Users/torsten/pixsy/pixsy-test/migrate_domains.coffee",
+		"/Users/torsten/pixsy/pixsy-test/models/photo.coffee",
+		"/Users/torsten/pixsy/pixsy-test/migrate.coffee",
+		"/Users/torsten/pixsy/pixsy-test/force.coffee",
+		"/Users/torsten/pixsy/pixsy-test/mp_stats.coffee",
+		"/Users/torsten/pixsy/pixsy-test/models/user.coffee",
+		"/Users/torsten/pixsy/pixsy-test/matches.json",
+		"/Users/torsten/htw/thesis/tex/main.tex",
+		"/Users/torsten/htw/thesis/tex/chapters/introduction.tex",
+		"/Users/torsten/htw/thesis/tex/chapters/music_visualization.tex",
+		"/Users/torsten/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/torsten/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/torsten/htw/thesis/tex/chapters/abstract.tex",
+		"/Users/torsten/htw/thesis/tex/readme.md",
+		"/Users/torsten/htw/thesis/tex/chapters/hue_environment.tex",
+		"/Users/torsten/htw/thesis/tex/main.blg",
+		"/Users/torsten/htw/thesis/tex/chapters/graph_databases.tex",
+		"/Users/torsten/htw/thesis/tex/chapters/recommendation_engines.tex",
+		"/Users/torsten/htw/thesis/tex/main.bbl",
+		"/Users/torsten/htw/thesis/tex/main.bib",
+		"/Users/torsten/Downloads/Graph_Databases.bibtex",
+		"/Users/torsten/htw/thesis/tex/literatur.blg",
+		"/Users/torsten/.latexmkrc",
+		"/Users/torsten/htw/thesis/tex/literatur.bib",
+		"/Users/torsten/.bash_profile",
+		"/Users/torsten/htw/thesis/tex/main.aux",
+		"/Users/torsten/htw/thesis/tex/main.aux.bak",
+		"/Users/torsten/htw/thesis/tex/thesis.sublime-project",
+		"/Users/torsten/htw/thesis/tex/hgbthesis.cls",
+		"/Users/torsten/htw/thesis/tex/hgb.sty",
+		"/Users/torsten/htw/thesis/tex/test.log",
+		"/Users/torsten/htw/thesis/tex/test.tex",
+		"/Users/torsten/htw/thesis/tex/sample.bib",
+		"/Users/torsten/htw/thesis/tex/test2.tex",
+		"/Users/torsten/htw/thesis/tex/deckblatt.tex",
+		"/Users/torsten/Downloads/install-tl-20141211/structure.txt",
+		"/Users/torsten/.bashrc",
+		"/Users/torsten/pixsy/pixsy-web/public/css/loading-bar.css",
+		"/usr/local/lib/node_modules/nib/lib/nib/vendor.styl",
+		"/usr/local/lib/node_modules/stylus/lib/parser.js",
+		"/usr/local/lib/node_modules/stylus/Readme.md",
+		"/usr/local/lib/node_modules/stylus/lib/functions/index.styl",
+		"/Users/torsten/htw/ios/jung/Ue5:6-Rueter/AddressBook/AddressBook/Base.lproj/Main.storyboard",
+		"/Users/torsten/htw/ios/jung/Ue5:6-Rueter/AddressBook/AddressBook.xcodeproj/project.xcworkspace/xcuserdata/torsten.xcuserdatad/UserInterfaceState.xcuserstate",
+		"/Users/torsten/htw/ios/jung/Ue5:6-Rueter/AddressBook/AddressBook/Base.lproj/LaunchScreen.xib",
+		"/Users/torsten/htw/ios/jung/Ue5:6-Rueter/AddressBook/AddressBook.xcodeproj/xcuserdata/torsten.xcuserdatad/xcschemes/xcschememanagement.plist",
+		"/Users/torsten/htw/ios/jung/Ue5:6-Rueter/AddressBook/AddressBook.xcodeproj/xcuserdata/torsten.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist",
+		"/Users/torsten/htw/ios/jung/Ue3-Rueter/Ue3-Vorgabe/,",
+		"/Users/torsten/pixsy/pixsy-zendesk/pixsy-ticket-duplicator/app.stylus",
+		"/Users/torsten/pixsy/pixsy-zendesk/pixsy-ticket-duplicator/templates/no-ref.hdbs",
+		"/Users/torsten/htw/ios/jung/Ue4-Rueter/CurrencyHelper/CurrencyHelper/Base.lproj/Main.storyboard",
+		"/Users/torsten/pixsy/pixsy-zendesk/pixsy-ticket-duplicator/templates/layout.hdbs",
+		"/Users/torsten/pixsy/pixsy-zendesk/pixsy-ticket-duplicator/app.coffee",
+		"/Users/torsten/pixsy/pixsy-zendesk/pixsy-ticket-duplicator/app.map",
+		"/Users/torsten/pixsy/pixsy-zendesk/pixsy-ticket-duplicator/manifest.json",
+		"/Users/torsten/Library/Application Support/Sublime Text 3/Packages/Stylus/Stylus.sublime-settings",
+		"/Users/torsten/Library/Application Support/Sublime Text 3/Packages/User/Stylus.sublime-settings",
+		"/Users/torsten/pixsy/pixsy-zendesk/pixsy-ticket-duplicator/app.js",
+		"/Users/torsten/pixsy/pixsy-zendesk/package.json",
+		"/Users/torsten/wz/wappzapp-parent/wappzapp-app/wappzapp-app-client/src/main/sass/base.sass",
+		"/Users/torsten/wz/wappzapp-parent/wappzapp-app/wappzapp-app-client/target/wappzapp-app-client/views/navigation.ftl",
+		"/Users/torsten/wz/wappzapp-parent/wappzapp-app/wappzapp-app-client/src/main/sass/nav.sass",
+		"/Users/torsten/pixsy/pixsy-web/public/js/vendor/ga.js",
+		"/Users/torsten/pixsy/pixsy-web/Gruntfile.js",
+		"/Users/torsten/pixsy/pixsy-web/lib/evidence/screenshot.coffee",
+		"/Users/torsten/pixsy/pixsy-web/public/components/moment/locale/sr-cyrl.js",
+		"/Users/torsten/pixsy/pixsy-web/server.coffee",
+		"/Users/torsten/hack/MyMoment/.gitignore",
+		"/Users/torsten/htw/Bachelorarbeit/quellen.txt",
+		"/Users/torsten/Desktop/mongo",
+		"/Users/torsten/robert/goeuro-angular-test-solution/app/main/main.html",
+		"/Users/torsten/Desktop/Erhebung.txt",
+		"/Users/torsten/pixsy/pixsy-web/controllers/photosController.coffee",
+		"/Users/torsten/pixsy/pixsy-web/models/photo.coffee",
+		"/Users/torsten/pixsy/pixsy-web/models/photo.js",
+		"/Users/torsten/pixsy/pixsy-web/.build/css/pace-theme.css",
+		"/Users/torsten/pixsy/pixsy-web/controller/photos.js",
+		"/Users/torsten/pixsy/pixsy-web/data/flickr/methods/flickr.stats.getPhotoStats.json",
+		"/Users/torsten/pixsy/pixsy-web/.build/components/jquery/src/core/parseHTML.js",
+		"/Users/torsten/pixsy/pixsy-web-2.0/pixsy/app.coffee",
+		"/Users/torsten/pixsy/pixsy-web/flickr.txt",
+		"/Users/torsten/.profile",
+		"/Applications/WebStorm.app/Contents/Info.plist",
+		"/Volumes/INTENSO/P_GP/faecher.css",
+		"/Volumes/INTENSO/P_GP/alex.css",
+		"/Volumes/INTENSO/P_GP/Stundenplan.html",
+		"/Users/torsten/alex/style.css",
+		"/Users/torsten/alex/index.html",
+		"/Users/torsten/pixsy/pixsy-web/log.txt",
+		"/Users/torsten/pixsy/pixsy-web/package.json",
+		"/Users/torsten/pixsy/pixsy-web/.git/config",
+		"/Users/torsten/pixsy/pixsy-test/index.js",
+		"/Users/torsten/pixsy/pixsy-test/start.coffee",
+		"/Users/torsten/pixsy/pixsy-test/status.coffee",
+		"/Users/torsten/pixsy/pixsy-test/test.txt",
+		"/Users/torsten/pixsy/pixsy-test/manager.js",
+		"/Users/torsten/pixsy/pixsy-test/manager.coffee",
+		"/Users/torsten/pixsy/pixsy-test/snippets.js",
+		"/Users/torsten/pixsy/pixsy-test/test2.txt",
+		"/Users/torsten/pixsy/pixsy-test/kill.coffee",
+		"/Users/torsten/wz/wappzapp-parent/wappzapp-core/wappzapp-core-entity/src/main/java/tv/wappzapp/entity/ScheduleStatus.java",
+		"/Users/torsten/wz/wappzapp-parent/wappzapp-core/wappzapp-core-entity/src/main/java/tv/wappzapp/entity/Schedule.java",
+		"/Users/torsten/Desktop/ycomb.txt",
+		"/etc/hosts",
+		"/Users/torsten/pixsy/newrelic.js",
+		"/Users/torsten/stayko/pixsy/public/templates/case/new.dust",
+		"/Users/torsten/stayko/pixsy/controllers/caseController.coffee",
+		"/Users/torsten/stayko/pixsy/lib/api/zendesk.coffee"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 100.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"->\n",
+			"*",
+			"/**",
+			"*",
+			"settings",
+			"m.save next",
+			"domain",
+			"p",
+			"$exists",
+			"'",
+			"\n",
+			"http://flickr.com/photo.gne?id=",
+			"flickr",
+			"photo_un",
+			"'",
+			"\n",
+			"1ms",
+			"pixgood",
+			".",
+			"'",
+			".",
+			"name",
+			"test",
+			"&",
+			"=",
+			"&",
+			"requests",
+			"jsforce",
+			"\n",
+			"https://pixsy.my.salesforce.com/",
+			"moment.dif",
+			"'",
+			"photo_un",
+			"users",
+			"\n",
+			"ObjectId",
+			"photos",
+			"\nPhoto.remove($q).exec ( err, photos ) ->\n    console.log arguments\n",
+			"number of ",
+			"charact",
+			"\"\",\n",
+			"bib",
+			"connected",
+			"natbib",
+			"graph databases",
+			"\\",
+			"}\n",
+			"%",
+			"'\n",
+			"\n",
+			"transition",
+			"mixin",
+			"QMv",
+			"Ah7",
+			"Ah7-4n-0Wa-view-QMv-5L-jWf",
+			"customClass",
+			"DetailTableViewController",
+			"contact",
+			"viewController",
+			"Ah7-4n-0Wa",
+			"ah7",
+			"owner",
+			"),\n",
+			"=\n",
+			".\n",
+			"console.err",
+			"logger",
+			"round",
+			"”",
+			"24848042",
+			"=",
+			",",
+			":",
+			"'",
+			"\n",
+			":",
+			"')\n",
+			"<p>\n    <button create-if-ticket>\n        Create IF Ticket\n    </button>    \n</p>\n",
+			"\"",
+			"url",
+			"name",
+			"\"Standard 500px License\"\n\"Creative Commons License Non Commercial Attribution\"\n\"Creative Commons License Non Commercial No Derivatives\"\n\"Creative Commons License Non Commercial Share Alike\"\n\"Creative Commons License Attribution\"\n\"Creative Commons License No Derivatives\"\n\"Creative Commons License Share Alike\"",
+			"\n",
+			"[DEBUG] ",
+			"G0000LMYNPKw7z90",
+			"[DEBUG]",
+			"[DEBUG] photoshelter",
+			",",
+			"jdbc",
+			"torsten/drei",
+			"torsten/",
+			"/torsten",
+			"hallo/was",
+			"return console.log(\"cases!\");",
+			"countrysel",
+			"factory(\"Mat",
+			"countrySelect",
+			".directive",
+			"https://pixsy-uploads.s3.amazonaws.com/53f3912ca16fb10b000d34a6_-_AKSEHIR.jpg",
+			" <CORSRule>\n   <AllowedOrigin>localhost</AllowedOrigin>\n\n   <AllowedMethod>PUT</AllowedMethod>\n   <AllowedMethod>POST</AllowedMethod>\n   <AllowedMethod>OPTIONS</AllowedMethod>\n\n   <AllowedHeader>*</AllowedHeader>\n </CORSRule>\n",
+			"registered",
+			"'",
+			" ",
+			"50",
+			"app[web.1]",
+			"54550aa10e95090b005f3acb",
+			"Hobbies",
+			"toBuffer",
+			"'",
+			"Mongoose: cases.insert({ __v: 0, _id: ObjectId(\"5450fdc42bc5df025fc18bea\"), created: new Date(\"Wed, 29 Oct 2014 14:46:29 GMT\"), modified: new Date(\"Wed, 29 Oct 2014 14:46:29 GMT\"), form: { no_third_party_has_exclusive_rights: 'on', renewed_license_history: 'on', notes: 'Comments', registered_with_us_copyright: 'no', license_range: 'higher', requested_price_high_currency: '', requested_price_high_value: '', requested_price_low_currency: '', requested_price_low_value: '', licensing_details: 'Details', license: 'All Rights Reserved', photo: { title: 'Sock', licensed_before: 'no', price: { currency: '', value: '' }, date_taken: '2014-10-02', place_taken: 'At Home' } }, match: ObjectId(\"5450f10cc06d6cc805482032\"), user: ObjectId(\"53f3912ca16fb10b000d34a6\"), screenshot: null, whois: { daystamp: '2014-10-29', nameservers: [], 'registered?': false, 'available?': true, status: 'available', domain: 'frontdoor.furniturerow.com' }, zendesk: 210, number: 9 }) {}  \n",
+			"form",
+			",\"",
+			"{\"",
+			"zendesk: ",
+			"newGlyph",
+			"glyphs.append(",
+			"Triangle",
+			"24631912",
+			"at ",
+			"\\r\\n",
+			"2s",
+			"20px",
+			"reverse",
+			"24px",
+			"opacity",
+			"NAME-YOUR-ANIMATION",
+			"</span>\n                    <span class=\"raum\">",
+			"<span class=\"lehrer\">"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"http://149.210.159.71/wappzapp-app"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 122.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "hue-thesis.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gulp",
+				"gulpfile.coffee"
+			],
+			[
+				"migrate",
+				"migrate2.coffee"
+			],
+			[
+				"match",
+				"models/match.coffee"
+			],
+			[
+				"match.coffe",
+				"models/match.coffee"
+			],
+			[
+				"photo",
+				"models/photo.coffee"
+			],
+			[
+				"migrate2",
+				"migrate2.coffee"
+			],
+			[
+				"photo.cof",
+				"models/photo.coffee"
+			],
+			[
+				"migr",
+				"migrate.coffee"
+			],
+			[
+				"fore",
+				"force.coffee"
+			],
+			[
+				"mp",
+				"mp_stats.coffee"
+			],
+			[
+				"migrate.",
+				"migrate.coffee"
+			],
+			[
+				"photo.c",
+				"models/photo.coffee"
+			],
+			[
+				"photo.coffe",
+				"models/photo.coffee"
+			],
+			[
+				"user",
+				"models/user.coffee"
+			],
+			[
+				"abstr",
+				"chapters/abstract.tex"
+			],
+			[
+				"main.tex",
+				"main.tex"
+			],
+			[
+				"intro",
+				"chapters/introduction.tex"
+			],
+			[
+				"hls",
+				"hgbthesis.cls"
+			],
+			[
+				"mai",
+				"main.tex"
+			],
+			[
+				"story",
+				"AddressBook/Base.lproj/Main.storyboard"
+			],
+			[
+				"app",
+				"app.coffee"
+			],
+			[
+				"boots",
+				"wappzapp-app/wappzapp-app-static/src/main/sass/bootstrap-wappzapp.sass"
+			],
+			[
+				"ga.js",
+				"public/js/vendor/ga.js"
+			],
+			[
+				"scripts.jade",
+				"views/partials/scripts.jade"
+			],
+			[
+				"photo.js",
+				"models/photo.js"
+			],
+			[
+				"photos",
+				"controllers/photosController.coffee"
+			],
+			[
+				"pace",
+				".build/css/pace-theme.css"
+			],
+			[
+				"index",
+				"index.coffee"
+			],
+			[
+				"zendes",
+				"lib/api/zendesk.coffee"
+			],
+			[
+				"casecontr",
+				"controllers/caseController.coffee"
+			],
+			[
+				"compo",
+				"flat-ui/components.html"
+			],
+			[
+				"wizard.coff",
+				"public/js/views/wizard.coffee"
+			],
+			[
+				"columncoffe",
+				"app/widgets/wz.StreamItem/controllers/Column.coffee"
+			],
+			[
+				"tiap",
+				"tiapp.xml"
+			],
+			[
+				"wapp",
+				"app/lib/WappZapp.coffee"
+			],
+			[
+				"iframe",
+				"media/engine/IFrameEngine.coffee"
+			],
+			[
+				"player",
+				"media/Player.coffee"
+			],
+			[
+				"webview",
+				"app/widgets/wz.VideoPlayer/controllers/WebView.coffee"
+			],
+			[
+				"alloy",
+				"app/alloy.coffee"
+			],
+			[
+				"maincoffe",
+				"app/scripts/main.coffee"
+			],
+			[
+				"cl",
+				"app/lib/Cloud.coffee"
+			],
+			[
+				"list",
+				"app/models/List.coffee"
+			],
+			[
+				"watch",
+				"app/widgets/wz.WatchItLaterButton/controllers/widget.coffee"
+			],
+			[
+				"dialog.css",
+				"wappzapp-app/wappzapp-app-admin/src/main/webapp/static/css/dialog.css"
+			],
+			[
+				"engine.js",
+				"wappzapp-app/wappzapp-app-client/src/main/webapp/static/js/app/views/engine.js"
+			],
+			[
+				"videitemcoffe",
+				"app/widgets/wz.VideoItem/controllers/widget.coffee"
+			],
+			[
+				"itemxml",
+				"app/widgets/wz.VideoItem/views/widget.xml"
+			],
+			[
+				"videitemxml",
+				"app/widgets/wz.VideoPlayer/views/TiMedia.xml"
+			],
+			[
+				"app.tss",
+				"app/styles/app.tss"
+			],
+			[
+				"presentertss",
+				"app/widgets/wz.ListPresenter/styles/Section.tss"
+			],
+			[
+				"wappza",
+				"app/lib/WappZapp.coffee"
+			],
+			[
+				"watchit",
+				"app/widgets/wz.WatchItLaterButton/controllers/widget.coffee"
+			],
+			[
+				"wz.socialtss",
+				"app/widgets/wz.Social/styles/widget.tss"
+			],
+			[
+				"widgetitemtss",
+				"app/widgets/wz.VideoItem/styles/widget.tss"
+			],
+			[
+				"strings",
+				"i18n/nl/strings.xml"
+			],
+			[
+				"i18",
+				"i18n/de/strings.xml"
+			],
+			[
+				"usercontrol",
+				"app/lib/userController.coffee"
+			],
+			[
+				"phi",
+				"wappzapp-app/wappzapp-app-static/target/wappzapp-app-static-1.1.1-SNAPSHOT/static/js/lib/phi/phi.slider.js"
+			],
+			[
+				"video",
+				"app/models/Video.coffee"
+			],
+			[
+				"tia",
+				"tiapp.xml"
+			],
+			[
+				"columnwi",
+				"app/widgets/wz.ProfileColumn/controllers/widget.coffee"
+			],
+			[
+				"js",
+				"Resources/iphone/facebookController.js"
+			],
+			[
+				"widget.js",
+				"Resources/iphone/alloy/widget.js"
+			],
+			[
+				"parse",
+				"app/models/ParsePushReg.coffee"
+			],
+			[
+				"video.coffe",
+				"app/controllers/Video.coffee"
+			],
+			[
+				"push",
+				"app/lib/PushNotifications.js"
+			],
+			[
+				"tiapp",
+				"tiapp.xml"
+			],
+			[
+				"timed",
+				"app/widgets/wz.VideoPlayer/controllers/TiMedia.coffee"
+			],
+			[
+				"conte",
+				"app/lib/contentController.coffee"
+			],
+			[
+				"columnwid",
+				"app/widgets/wz.ProfileColumn/controllers/widget.coffee"
+			],
+			[
+				"videoplayew",
+				"app/widgets/wz.VideoPlayer/controllers/widget.coffee"
+			],
+			[
+				"videoitem",
+				"app/widgets/wz.VideoItem/controllers/widget.coffee"
+			],
+			[
+				"videoplayercoffe",
+				"app/widgets/wz.VideoPlayer/controllers/widget.coffee"
+			],
+			[
+				"fullscreenwebview",
+				"app/widgets/wz.FullscreenWebView/controllers/widget.js"
+			],
+			[
+				"videoitemcoffe",
+				"app/widgets/wz.VideoItem/controllers/widget.coffee"
+			],
+			[
+				"spinner",
+				"app/widgets/wz.Spinner/controllers/widget.coffee"
+			],
+			[
+				"strea",
+				"app/controllers/Stream.coffee"
+			],
+			[
+				"add",
+				"app/controllers/AddToList.coffee"
+			],
+			[
+				"pro",
+				"app/controllers/Profile.coffee"
+			],
+			[
+				"profi",
+				"app/controllers/Profile.coffee"
+			],
+			[
+				"window",
+				"app/lib/windowController.coffee"
+			],
+			[
+				"windowcon",
+				"app/lib/windowController.coffee"
+			],
+			[
+				"windowco",
+				"Resources/iphone/windowController.js"
+			],
+			[
+				"header",
+				"app/widgets/wz.ListPresenter/controllers/Header.coffee"
+			],
+			[
+				"spotlightcoffe",
+				"app/widgets/wz.SpotlightView/controllers/widget.coffee"
+			],
+			[
+				"nav",
+				"app/controllers/Navigation.coffee"
+			],
+			[
+				"log",
+				"app/controllers/Login.coffee"
+			],
+			[
+				"navi",
+				"app/controllers/Navigation.coffee"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
