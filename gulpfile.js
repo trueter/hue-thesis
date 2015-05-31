@@ -9,7 +9,6 @@ var beep = require('beepbeep');
 var express = require('express');
 var path = require('path');
 var open = require('open');
-var stylish = require('jshint-stylish');
 var connectLr = require('connect-livereload');
 var streamqueue = require('streamqueue');
 var runSequence = require('run-sequence');
@@ -167,17 +166,6 @@ gulp.task('images', function() {
 });
 
 
-// lint js sources based on .jshintrc ruleset
-gulp.task('jsHint', function(done) {
-  return gulp
-    .src('app/scripts/**/*.js')
-    .pipe(plugins.jshint())
-    .pipe(plugins.jshint.reporter(stylish))
-
-    .on('error', errorHandler);
-    done();
-});
-
 // concatenate and minify vendor sources
 gulp.task('vendor', function() {
   var vendorFiles = require('./vendor.json');
@@ -194,7 +182,7 @@ gulp.task('vendor', function() {
 
 
 // inject the files in index.html
-gulp.task('index', ['jsHint', 'scripts'], function() {
+gulp.task('index', ['scripts'], function() {
 
   // build has a '-versionnumber' suffix
   var cssNaming = 'styles/main*';

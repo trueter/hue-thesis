@@ -5,9 +5,10 @@
 			"path": ".",
             "folder_exclude_patterns": [
                 "node_modules",
-                "bower_components",
+                //"bower_components",
                 ".svn",
                 ".tmp"
+
             ],
             "file_exclude_patterns": [
                 "app/scripts/*.js",

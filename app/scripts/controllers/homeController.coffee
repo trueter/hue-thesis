@@ -1,3 +1,3 @@
-angular.module('HueThesis').controller 'HomeController', ( $scope, ExampleService ) ->
+angular.module('HueThesis').controller 'HomeController', ( $scope ) ->
 
     $scope.myHTML = "hi";

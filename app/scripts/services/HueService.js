@@ -13,7 +13,7 @@
 
     HueService.prototype._lights = [];
 
-    function HueService($rootScope, $http, $q, config, $console) {
+    function HueService($rootScope, $http, $q) {
       var q;
       q = $q.defer();
       this.lights = function() {

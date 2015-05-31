@@ -6,6 +6,7 @@
 
 @import "_variables";
 @import "_fonts";
+@import "_custom_theme";
 
 /**
  * LAYOUT
@@ -25,3 +26,6 @@
  */
 
 @import "views/home";
+@import "views/lights";
+@import "views/song";
+@import "views/canvas";

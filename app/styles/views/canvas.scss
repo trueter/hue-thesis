@@ -1,0 +1,35 @@
+.bulb-canvas {
+    position: relative;
+    border: 1px solid red;
+    min-height: 400px;
+    height: 100%;
+}
+
+.bulb {
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+
+    border: 1px solid #ccc;
+}
+
+.bulb-1 {
+    top: 25px;
+    left: 25px;
+    display: none;
+}
+
+.bulb-2 {
+    top: 25px;
+    right: 25px;
+}
+
+.bulb-3 {
+    bottom: 25px;
+    left: 25px;
+}
+
+.bulb-4 {
+    top: 25px;
+    bottom: 25px;
+}

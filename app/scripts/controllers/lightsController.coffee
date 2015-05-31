@@ -6,7 +6,7 @@
  # @description
  # # HomeController
  #
-angular.module('HueThesis').controller 'LightsIndexCtrl', ( $scope, $hue ) ->
+angular.module('HueThesis').controller 'LightsController', ( $scope, $hue ) ->
 
     $scope.lights = $hue.lights().then ( lights ) ->
         console.log lights

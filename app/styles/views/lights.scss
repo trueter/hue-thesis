@@ -1,0 +1,13 @@
+.item{
+    position: relative;
+}
+
+.color-indicator{
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}

@@ -14,7 +14,7 @@ angular.module('HueThesis').service '$hue', class HueService
     _lights : []
 
 
-    constructor :  ( $rootScope, $http, $q, config, $console ) ->
+    constructor :  ( $rootScope, $http, $q ) ->
 
         q = $q.defer()
 
