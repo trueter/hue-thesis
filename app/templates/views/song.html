@@ -1,10 +1,10 @@
 <ion-view>
-    <ion-header-bar align-title="center" class="bar-positive bar-hue">
+    <ion-header-bar align-title="center" class="bar-light bar-hue">
     <button class="button button-icon icon ion-navicon" menu-toggle="left"></button>
-        <h1 class="title">hue thesis</h1>
+        <h1 class="title" ng-bind="song.title"></h1>
     </ion-header-bar>
 
-    <ion-content>
+    <ion-content id="song-content"t>
         <ul>
             <li ng-repeat="h in history" ng-bind="h.type"></li>
         </ul>
