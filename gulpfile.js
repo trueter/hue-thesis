@@ -9,11 +9,16 @@ var beep = require('beepbeep');
 var express = require('express');
 var path = require('path');
 var open = require('open');
+var changed = require('gulp-changed');
 var connectLr = require('connect-livereload');
 var streamqueue = require('streamqueue');
 var runSequence = require('run-sequence');
 var merge = require('merge-stream');
 var ripple = require('ripple-emulator');
+var sass = require('gulp-sass');
+var cache = require('gulp-cached');
+var remember = require('gulp-remember');
+
 
 /**
  * Parse arguments
@@ -64,20 +69,46 @@ gulp.task('clean', function(done) {
 // precompile .scss and concat with ionic.css
 gulp.task('styles', function() {
 
-  var options = build ? { style: 'compressed' } : { style: 'expanded' };
+  var o1 = {
+    indentedSyntax : true,
+    style: build ? 'compressed' : 'expanded'
+  };
+  var o2 = build ? { style: 'compressed' } : { style: 'expanded' };
 
-  var sassStream = plugins.rubySass('app/styles/main.scss', options)
+
+
+
+  var sassStream = gulp.src('app/styles/main.sass')
+      .pipe(sass(o1))
+      .on('error', function(err) {
+        console.log('err: ', err);
+        beep();
+      });
+
+  var themeStream = gulp.src('app/styles/theme.scss')
+      .on('error', function(err) {
+        console.log('err: ', err);
+        beep();
+      });
+
+  var baseStream = gulp.src('bower_components/ionic/scss/ionic.scss')
+      .pipe(cache('ionic-sas'))
+      .pipe(sass(o2))
+      .pipe(remember('ionic-sass'))
+      .on('error', function(err) {
+        console.log('err: ', err);
+        beep();
+      });
+
+  //var ionicStream = streamqueue({objectMode: true}, themeStream, baseStream)
+
+  return streamqueue({ objectMode: true }, baseStream, sassStream)
       .pipe(plugins.autoprefixer('last 1 Chrome version', 'last 3 iOS versions', 'last 3 Android versions'))
-
-  var cssStream = gulp
-    .src('bower_components/ionic/css/ionic.min.css');
-
-  return streamqueue({ objectMode: true }, cssStream, sassStream)
-    .pipe(plugins.concat('main.css'))
-    .pipe(plugins.if(build, plugins.stripCssComments()))
-    .pipe(plugins.if(build && !emulate, plugins.rev()))
-    .pipe(gulp.dest(path.join(targetDir, 'styles')))
-    .on('error', errorHandler);
+      .pipe(plugins.concat('main.css'))
+      .pipe(plugins.if(build, plugins.stripCssComments()))
+      .pipe(plugins.if(build && !emulate, plugins.rev()))
+      .pipe(gulp.dest(path.join(targetDir, 'styles')))
+      .on('error', errorHandler);
 });
 
 
@@ -225,7 +256,7 @@ gulp.task('serve', function() {
     .use(!build ? connectLr() : function(){})
     .use(express.static(targetDir))
     .listen(port);
-  open('http://localhost:' + port + '/');
+  //open('http://localhost:' + port + '/');
 });
 
 // ionic emulate wrapper
@@ -273,7 +304,8 @@ gulp.task('ripple', ['scripts', 'styles', 'watchers'], function() {
 // start watchers
 gulp.task('watchers', function() {
   plugins.livereload.listen();
-  gulp.watch('app/styles/**/*.scss', ['styles']);
+  gulp.watch('app/styles/**/*.{sass,scss}', ['styles']);
+  gulp.watch('bower_components/ionic/scss/*.scss', ['styles']);
   gulp.watch('app/fonts/**', ['fonts']);
   gulp.watch('app/icons/**', ['iconfont']);
   gulp.watch('app/images/**', ['images']);
