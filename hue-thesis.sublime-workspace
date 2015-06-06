@@ -43,6 +43,63 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/templates/views/song.html",
+			"settings":
+			{
+				"buffer_size": 521,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 392,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/_custom_theme.scss",
+			"settings":
+			{
+				"buffer_size": 162,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "hue-thesis.sublime-project",
+			"settings":
+			{
+				"buffer_size": 357,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/services/VisualizerService.coffee",
+			"settings":
+			{
+				"buffer_size": 253,
+				"line_ending": "Unix",
+				"name": "Visualizer"
+			}
+		},
+		{
+			"file": "app/styles/views/song.scss",
+			"settings":
+			{
+				"buffer_size": 171,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/services/SpotifyService.coffee",
+			"settings":
+			{
+				"buffer_size": 2383,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -95,7 +152,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 164.0,
+		"height": 400.0,
 		"last_filter": "",
 		"selected_items":
 		[
@@ -128,7 +185,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 601.0
+		"width": 479.0
 	},
 	"console":
 	{
@@ -150,22 +207,50 @@
 	[
 		"/Users/torsten/htw/thesis/hue-thesis",
 		"/Users/torsten/htw/thesis/hue-thesis/app",
-		"/Users/torsten/htw/thesis/hue-thesis/app/scripts"
+		"/Users/torsten/htw/thesis/hue-thesis/app/styles",
+		"/Users/torsten/htw/thesis/hue-thesis/bower_components",
+		"/Users/torsten/htw/thesis/hue-thesis/bower_components/ionic/css",
+		"/Users/torsten/htw/thesis/hue-thesis/bower_components/ionic/scss",
+		"/Users/torsten/htw/thesis/hue-thesis/www"
 	],
 	"file_history":
 	[
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/songController.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/gulpfile.js",
+		"/Users/torsten/htw/thesis/hue-thesis/app/styles/main.scss",
+		"/Users/torsten/htw/thesis/hue-thesis/app/styles/_variables.scss",
+		"/Users/torsten/htw/thesis/hue-thesis/app/styles/ionic-config.scss",
+		"/Users/torsten/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/torsten/htw/thesis/hue-thesis/app/templates/views/song.html",
+		"/Users/torsten/htw/thesis/hue-thesis/app/styles/views/song.scss",
+		"/Users/torsten/htw/thesis/hue-thesis/app/index.html",
+		"/Users/torsten/playground/hue/echo.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/vendor.json",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/services/EchonestService.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/app.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/directives/BulbDirective.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/templates/views/canvas.html",
+		"/Users/torsten/htw/thesis/hue-thesis/hue-thesis.sublime-project",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/services/SpotifyService.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/styles/views/lights.scss",
+		"/Users/torsten/htw/thesis/hue-thesis/app/styles/views/canvas.scss",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/services/SongService.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/canvasController.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/.tmp/templates/main.html",
+		"/Users/torsten/htw/thesis/hue-thesis/app/templates/main.html",
+		"/Users/torsten/htw/thesis/hue-thesis/.tmp/styles/main.css",
+		"/Users/torsten/htw/thesis/hue-thesis/app/templates/views/home.html",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/homeController.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/styles/views/home.scss",
+		"/Users/torsten/htw/thesis/hue-thesis/app/templates/views/lights.html",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/services/HueService.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/settingsController.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/lightsController.coffee",
+		"/Users/torsten/htw/thesis/hue-thesis/hue-thesis.sublime-workspace",
 		"/Users/torsten/Library/Application Support/Sublime Text 3/Packages/User/CoffeeScript.sublime-settings",
 		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/homeController.js",
-		"/Users/torsten/htw/thesis/hue-thesis/hue-thesis.sublime-project",
-		"/Users/torsten/htw/thesis/hue-thesis/app/templates/views/lights.html",
-		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/lightsController.coffee",
-		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/settingsController.coffee",
 		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/services/ApiService.coffee",
-		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/services/SpotifyService.coffee",
-		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/services/HueService.coffee",
-		"/Users/torsten/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/mainController.coffee",
-		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/controllers/homeController.coffee",
 		"/Users/torsten/Library/Application Support/Sublime Text 3/Packages/Better CoffeeScript/CoffeeScript.sublime-settings",
 		"/Users/torsten/htw/thesis/hue-thesis/app/scripts/app.js",
 		"/Users/torsten/pixsy/pixsy-test/models/match.coffee",
@@ -257,31 +342,7 @@
 		"/Users/torsten/pixsy/pixsy-web/flickr.txt",
 		"/Users/torsten/.profile",
 		"/Applications/WebStorm.app/Contents/Info.plist",
-		"/Volumes/INTENSO/P_GP/faecher.css",
-		"/Volumes/INTENSO/P_GP/alex.css",
-		"/Volumes/INTENSO/P_GP/Stundenplan.html",
-		"/Users/torsten/alex/style.css",
-		"/Users/torsten/alex/index.html",
-		"/Users/torsten/pixsy/pixsy-web/log.txt",
-		"/Users/torsten/pixsy/pixsy-web/package.json",
-		"/Users/torsten/pixsy/pixsy-web/.git/config",
-		"/Users/torsten/pixsy/pixsy-test/index.js",
-		"/Users/torsten/pixsy/pixsy-test/start.coffee",
-		"/Users/torsten/pixsy/pixsy-test/status.coffee",
-		"/Users/torsten/pixsy/pixsy-test/test.txt",
-		"/Users/torsten/pixsy/pixsy-test/manager.js",
-		"/Users/torsten/pixsy/pixsy-test/manager.coffee",
-		"/Users/torsten/pixsy/pixsy-test/snippets.js",
-		"/Users/torsten/pixsy/pixsy-test/test2.txt",
-		"/Users/torsten/pixsy/pixsy-test/kill.coffee",
-		"/Users/torsten/wz/wappzapp-parent/wappzapp-core/wappzapp-core-entity/src/main/java/tv/wappzapp/entity/ScheduleStatus.java",
-		"/Users/torsten/wz/wappzapp-parent/wappzapp-core/wappzapp-core-entity/src/main/java/tv/wappzapp/entity/Schedule.java",
-		"/Users/torsten/Desktop/ycomb.txt",
-		"/etc/hosts",
-		"/Users/torsten/pixsy/newrelic.js",
-		"/Users/torsten/stayko/pixsy/public/templates/case/new.dust",
-		"/Users/torsten/stayko/pixsy/controllers/caseController.coffee",
-		"/Users/torsten/stayko/pixsy/lib/api/zendesk.coffee"
+		"/Volumes/INTENSO/P_GP/faecher.css"
 	],
 	"find":
 	{
@@ -300,6 +361,26 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"console.log",
+			"bower",
+			"\"l\"",
+			"time : performance.now()",
+			"true",
+			"=",
+			": ",
+			":",
+			"$scope,",
+			"canvas",
+			"-",
+			"bulb",
+			"<bulb",
+			".bulb-1 {",
+			"cssnaming",
+			":",
+			"jshint",
+			"settings",
+			";",
+			"//",
 			"->\n",
 			"*",
 			"/**",
@@ -407,27 +488,7 @@
 			"app[web.1]",
 			"54550aa10e95090b005f3acb",
 			"Hobbies",
-			"toBuffer",
-			"'",
-			"Mongoose: cases.insert({ __v: 0, _id: ObjectId(\"5450fdc42bc5df025fc18bea\"), created: new Date(\"Wed, 29 Oct 2014 14:46:29 GMT\"), modified: new Date(\"Wed, 29 Oct 2014 14:46:29 GMT\"), form: { no_third_party_has_exclusive_rights: 'on', renewed_license_history: 'on', notes: 'Comments', registered_with_us_copyright: 'no', license_range: 'higher', requested_price_high_currency: '', requested_price_high_value: '', requested_price_low_currency: '', requested_price_low_value: '', licensing_details: 'Details', license: 'All Rights Reserved', photo: { title: 'Sock', licensed_before: 'no', price: { currency: '', value: '' }, date_taken: '2014-10-02', place_taken: 'At Home' } }, match: ObjectId(\"5450f10cc06d6cc805482032\"), user: ObjectId(\"53f3912ca16fb10b000d34a6\"), screenshot: null, whois: { daystamp: '2014-10-29', nameservers: [], 'registered?': false, 'available?': true, status: 'available', domain: 'frontdoor.furniturerow.com' }, zendesk: 210, number: 9 }) {}  \n",
-			"form",
-			",\"",
-			"{\"",
-			"zendesk: ",
-			"newGlyph",
-			"glyphs.append(",
-			"Triangle",
-			"24631912",
-			"at ",
-			"\\r\\n",
-			"2s",
-			"20px",
-			"reverse",
-			"24px",
-			"opacity",
-			"NAME-YOUR-ANIMATION",
-			"</span>\n                    <span class=\"raum\">",
-			"<span class=\"lehrer\">"
+			"toBuffer"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -446,8 +507,625 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/templates/views/song.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 521,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72,
+								72
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/styles/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								182,
+								182
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/styles/_custom_theme.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								141,
+								141
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "hue-thesis.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								171,
+								171
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JSON (JavaScriptNext).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/scripts/services/VisualizerService.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 253,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								178,
+								178
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "Visualizer",
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/styles/views/song.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								164,
+								164
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/scripts/services/SpotifyService.coffee",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2383,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1126,
+								1126
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content"
+							],
+							"syntax": "Packages/Better CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -505,7 +1183,67 @@
 		[
 			[
 				"gulp",
-				"gulpfile.coffee"
+				"gulpfile.js"
+			],
+			[
+				"song.scs",
+				"app/styles/views/song.scss"
+			],
+			[
+				"song",
+				"app/templates/views/song.html"
+			],
+			[
+				"song.co",
+				"app/scripts/controllers/songController.coffee"
+			],
+			[
+				"spot",
+				"app/scripts/services/SpotifyService.coffee"
+			],
+			[
+				"gulpf",
+				"gulpfile.js"
+			],
+			[
+				"index",
+				"app/index.html"
+			],
+			[
+				"app.c",
+				"app/scripts/app.coffee"
+			],
+			[
+				"echo",
+				"app/scripts/services/EchonestService.coffee"
+			],
+			[
+				"app.",
+				"app/scripts/app.coffee"
+			],
+			[
+				"bulb",
+				"app/scripts/directives/BulbDirective.coffee"
+			],
+			[
+				"canvas",
+				"app/templates/views/canvas.html"
+			],
+			[
+				"appc",
+				"app/scripts/app.coffee"
+			],
+			[
+				"app",
+				"app/scripts/app.coffee"
+			],
+			[
+				"home",
+				"app/templates/views/home.html"
+			],
+			[
+				"can",
+				"app/templates/views/canvas.html"
 			],
 			[
 				"migrate",
@@ -584,10 +1322,6 @@
 				"AddressBook/Base.lproj/Main.storyboard"
 			],
 			[
-				"app",
-				"app.coffee"
-			],
-			[
 				"boots",
 				"wappzapp-app/wappzapp-app-static/src/main/sass/bootstrap-wappzapp.sass"
 			],
@@ -610,10 +1344,6 @@
 			[
 				"pace",
 				".build/css/pace-theme.css"
-			],
-			[
-				"index",
-				"index.coffee"
 			],
 			[
 				"zendes",
@@ -884,7 +1614,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 249.0,
+	"side_bar_width": 349.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
