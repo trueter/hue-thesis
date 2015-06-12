@@ -1,17 +1,17 @@
 <ion-view view-title="Lights">
-  <ion-nav-bar class="bar-positive">
+  <ion-nav-bar class="bar-light">
     <ion-nav-buttons side="primary">
       <button class="button button-icon icon ion-navicon" menu-toggle="left"></button>
     </ion-nav-buttons>
 
     <ion-nav-buttons side="secondary">
-      <button ng-click="sync()" class="button">Sync</button>
+      <button ng-click="sync()" class="button button-dark">Sync</button>
     </ion-nav-buttons>
   </ion-nav-bar>
   <ion-content>
-    <ion-list>
+    <ion-list ng-if="lights && lights.length">
       <ion-item ng-repeat="light in lights"><span ng-bind="light.name"></span>
-        <div ng-style="getStyleFromState( light.state )" class="color-indicator"></div>
+        <div ng-click="toggle($index)", ng-style="getStyleFromState( light.state )" class="color-indicator"></div>
       </ion-item>
     </ion-list>
   </ion-content>

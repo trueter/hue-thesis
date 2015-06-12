@@ -8,8 +8,9 @@ angular.module('HueThesis').service '$spotify', class SpotifyService
 
     constructor :  ( $rootScope, $http, $interval, $q ) ->
 
-        console.log "trying to authenticate"
+        @mock = mock
 
+        console.log "trying to authenticate"
 
 
         spotify.authenticate 'test-scheme', 'aRandomClientId1234', 'code', 'http://tok.en', ['streaming'], ( err, session ) ->
@@ -23,33 +24,15 @@ angular.module('HueThesis').service '$spotify', class SpotifyService
                 if not mock then console.log arguments
                 if not mock then console.log "playing song"
 
-                audioplayer.play 'spotify:track:3XpXhVtZwqh2eM5d9ieXT5', ( err, data ) ->
-                    if not mock then console.log "song playing"
-                    if not mock then console.log arguments
+                $rootScope.$on 'song:select', ( e, song ) ->
 
-                    if mock
-                        $interval ->
-                            $rootScope.$emit 'song:event',
-                                type : "beat"
-                                time : performance.now()
-                                duration : 0.3
-                        , 1000
-                        $interval ->
-                            $rootScope.$emit 'song:event',
-                                type : "bar"
-                                time : performance.now()
-                                duration : 4
-                        , 4002
-                        $interval ->
-                            $rootScope.$emit 'song:event',
-                                type : "section"
-                                time : performance.now()
-                                duration : 0.5
-                        , 8000
+                    audioplayer.play song.spotifyId, ( err, data ) ->
+                        if not mock then console.log "song playing"
+                        if not mock then console.log arguments
 
-
-
-
+                        setTimeout ->
+                            $rootScope.$emit 'song:play'
+                        , 500
 
 
 
@@ -62,7 +45,7 @@ angular.module('HueThesis').service '$spotify', class SpotifyService
 
 
 if mock
-    window.spotify =
+    this.spotify =
         authenticate : ( a, b, c, d, e, cb ) ->
             cb()
         createAudioPlayer: ->

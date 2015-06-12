@@ -12,6 +12,7 @@
     CLIENT_ID = audioplayer = null;
 
     function SpotifyService($rootScope, $http, $interval, $q) {
+      this.mock = mock;
       console.log("trying to authenticate");
       spotify.authenticate('test-scheme', 'aRandomClientId1234', 'code', 'http://tok.en', ['streaming'], function(err, session) {
         if (!mock) {
@@ -34,36 +35,18 @@
           if (!mock) {
             console.log("playing song");
           }
-          return audioplayer.play('spotify:track:3XpXhVtZwqh2eM5d9ieXT5', function(err, data) {
-            if (!mock) {
-              console.log("song playing");
-            }
-            if (!mock) {
-              console.log(arguments);
-            }
-            if (mock) {
-              $interval(function() {
-                return $rootScope.$emit('song:event', {
-                  type: "beat",
-                  time: performance.now(),
-                  duration: 0.3
-                });
-              }, 1000);
-              $interval(function() {
-                return $rootScope.$emit('song:event', {
-                  type: "bar",
-                  time: performance.now(),
-                  duration: 4
-                });
-              }, 4002);
-              return $interval(function() {
-                return $rootScope.$emit('song:event', {
-                  type: "section",
-                  time: performance.now(),
-                  duration: 0.5
-                });
-              }, 8000);
-            }
+          return $rootScope.$on('song:select', function(e, song) {
+            return audioplayer.play(song.spotifyId, function(err, data) {
+              if (!mock) {
+                console.log("song playing");
+              }
+              if (!mock) {
+                console.log(arguments);
+              }
+              return setTimeout(function() {
+                return $rootScope.$emit('song:play');
+              }, 500);
+            });
           });
         });
       });
@@ -82,7 +65,7 @@
   })());
 
   if (mock) {
-    window.spotify = {
+    this.spotify = {
       authenticate: function(a, b, c, d, e, cb) {
         return cb();
       },
@@ -100,3 +83,5 @@
   }
 
 }).call(this);
+
+//# sourceMappingURL=SpotifyService.js.map

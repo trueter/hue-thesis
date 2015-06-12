@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "canvasController.js",
+  "sourceRoot": "",
+  "sources": [
+    "canvasController.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,EAAA,OAAO,CAAC,MAAR,CAAe,WAAf,CAA2B,CAAC,UAA5B,CAAuC,kBAAvC,EAA2D,SAAE,MAAF,EAAU,IAAV,GAAA;WAEvD,IAAI,CAAC,MAAL,CAAA,CAAa,CAAC,IAAd,CAAmB,SAAE,MAAF,GAAA;aACf,MAAM,CAAC,MAAP,GAAgB,OADD;IAAA,CAAnB,EAFuD;EAAA,CAA3D,CAAA,CAAA;AAAA"
+}

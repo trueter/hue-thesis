@@ -6,21 +6,21 @@
  # @description
  # # HomeController
  #
-angular.module('HueThesis').controller 'LightsController', ( $scope, $hue ) ->
-
-    $scope.lights = $hue.lights().then ( lights ) ->
-        console.log lights
-        $scope.lights = lights
-
+angular.module('HueThesis').controller 'LightsController', ( $rootScope, $scope, $hue ) ->
 
     $scope.sync = ->
-        $scope.lights = []
-        $hue.sync().lights().then ( lights ) ->
-            $scope.lights = lights
+        $hue.sync()
+
+    $scope.$watch $rootScope.lights, ->
+        console.log arguments
+
+    console.log $rootScope.lights
 
 
+    $scope.toggle = $hue.toggle.bind($hue)
 
     $scope.getStyleFromState = ( state ) ->
+        return if not state
 
         payload =
             x   : state.xy[ 0 ]
@@ -33,6 +33,13 @@ angular.module('HueThesis').controller 'LightsController', ( $scope, $hue ) ->
             rgb[ k ] = Math.round( 255 * v )
 
 
-        'background-color': "rgb(#{ rgb.r },#{ rgb.g },#{ rgb.b })"
+        obj =
+            'background-color': "rgb(#{ rgb.r },#{ rgb.g },#{ rgb.b })"
+
+        if state.on is off
+            obj.filter = 'grayscale(100%)'
+            obj.webkitFilter = 'grayscale(100%)'
+
+        obj
 
 

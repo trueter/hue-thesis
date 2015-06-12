@@ -3,14 +3,95 @@
   var VisualizerService;
 
   angular.module('HueThesis').service('$visualizer', VisualizerService = (function() {
-    function VisualizerService($rootScope) {
-      this.get = function() {
-        return this.song;
+    function VisualizerService($rootScope, $interval, $hue) {
+      var barColorIndex, barColors, bassColors, elements, lampIndex, latestBassBri, li;
+      this.song = null;
+      elements = ['bars', 'beats', 'sections'];
+      $rootScope.$on('song:select', (function(_this) {
+        return function(e, song) {
+          var i, idx, j, latency, len, results, start;
+          latency = 250;
+          start = new Date() - latency;
+          results = [];
+          for (j = 0, len = elements.length; j < len; j++) {
+            e = elements[j];
+            results.push((function() {
+              var k, len1, ref, results1;
+              ref = song.analysis[e];
+              results1 = [];
+              for (idx = k = 0, len1 = ref.length; k < len1; idx = ++k) {
+                i = ref[idx];
+                if (i.confidence > 0.3) {
+                  results1.push((function(item, element, index) {
+                    var diff;
+                    diff = new Date() - start;
+                    return setTimeout(function() {
+                      return $rootScope.$emit('song:event', {
+                        type: element.slice(0, -1),
+                        duration: item.duration,
+                        index: index,
+                        start: item.start,
+                        confidence: item.confidence
+                      });
+                    }, item.start * 1000 - diff);
+                  })(i, e, idx));
+                }
+              }
+              return results1;
+            })());
+          }
+          return results;
+        };
+      })(this));
+      bassColors = [50000];
+      barColors = [0, 20000, 35000];
+      barColorIndex = 0;
+      lampIndex = 0;
+      $rootScope.$on('song:select', function() {
+        var def;
+        def = {
+          on: true,
+          bri: 128
+        };
+        $hue.set(2, def);
+        $hue.set(1, def);
+        $hue.set(0, def);
+        return $hue.set(3, def);
+      });
+      latestBassBri = 0;
+      li = function(n) {
+        return (lampIndex + n) % 4;
       };
-      this.set = function(song) {
-        $rootScope.$emit('song:set', song);
-        return this.song = song;
-      };
+      $rootScope.$on('song:event', function(ctx, e) {
+        var color;
+        if (e.type === 'beat') {
+          if (e.confidence > 0.7) {
+            color = bassColors[e.index % bassColors.length];
+            console.log("beat", color);
+            latestBassBri += 62;
+            $hue.set(li(1), {
+              hue: color,
+              bri: latestBassBri % 255
+            });
+            $hue.set(li(2), {
+              hue: color,
+              bri: latestBassBri % 255
+            });
+          }
+        }
+        if (e.type === 'bar') {
+          $hue.set(li(3), {
+            hue: barColors[barColorIndex % barColors.length]
+          });
+          $hue.set(li(4), {
+            hue: barColors[barColorIndex % barColors.length]
+          });
+        }
+        if (e.type === 'section') {
+          barColorIndex++;
+          return lampIndex++;
+        }
+      });
     }
 
     return VisualizerService;
@@ -18,3 +99,5 @@
   })());
 
 }).call(this);
+
+//# sourceMappingURL=VisualizerService.js.map

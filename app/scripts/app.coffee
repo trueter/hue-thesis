@@ -1,12 +1,15 @@
 angular
-    .module( 'HueThesis', ['ionic', 'ngCordova', 'ngResource', 'angular-echonest']).run ( $ionicPlatform, $spotify ) ->
+    .module( 'HueThesis', ['ionic', 'ngCordova', 'ngResource', 'angular-echonest']).run ( $rootScope, $ionicPlatform, $hue ) ->
+
 
         $ionicPlatform.ready ->
 
 
 
 
-    .config ( EchonestProvider, $httpProvider, $stateProvider, $urlRouterProvider ) ->
+
+    .config ( EchonestProvider, $httpProvider, $stateProvider, $urlRouterProvider) ->
+
         # register $http interceptors, if any. e.g.
         # $httpProvider.interceptors.push('interceptor-name')
         EchonestProvider.setApiKey 'YSSOAU0PJYAK6WUYD'

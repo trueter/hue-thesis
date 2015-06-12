@@ -20,6 +20,7 @@ var cache = require('gulp-cached');
 var remember = require('gulp-remember');
 
 
+
 /**
  * Parse arguments
  */
@@ -34,7 +35,7 @@ var args = require('yargs')
     .default('strip-debug', false)
     .argv;
 
-var build = !!(args.build || args.emulate || args.run);
+var build = false; //!!(args.build || args.emulate || args.run);
 var emulate = args.emulate;
 var run = args.run;
 var port = args.port;
@@ -92,7 +93,7 @@ gulp.task('styles', function() {
       });
 
   var baseStream = gulp.src('bower_components/ionic/scss/ionic.scss')
-      .pipe(cache('ionic-sas'))
+      .pipe(cache('ionic-sass'))
       .pipe(sass(o2))
       .pipe(remember('ionic-sass'))
       .on('error', function(err) {
@@ -202,6 +203,7 @@ gulp.task('vendor', function() {
   var vendorFiles = require('./vendor.json');
 
   return gulp.src(vendorFiles)
+    .pipe(plugins.ngAnnotate())
     .pipe(plugins.concat('vendor.js'))
     .pipe(plugins.if(build, plugins.uglify()))
     .pipe(plugins.if(build, plugins.rev()))

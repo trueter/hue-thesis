@@ -1,6 +1,3 @@
-console.log "loading directive"
-
-
 angular.module('HueThesis').directive 'bulb', ( $hue ) ->
     restrict : 'C'
     scope :

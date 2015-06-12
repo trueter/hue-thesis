@@ -8,13 +8,11 @@ angular.module('HueThesis').service '$hue', class HueService
 
 
     ip : '192.168.0.16'
-
     user : 'newdeveloper'
-
     _lights : []
 
 
-    constructor :  ( $rootScope, $http, $q ) ->
+    constructor :  ( _, $rootScope, $timeout, $http, $q ) ->
 
         q = $q.defer()
 
@@ -23,6 +21,7 @@ angular.module('HueThesis').service '$hue', class HueService
             q.promise
 
         @sync = ->
+            console.log "syncing"
 
             if q.promise.$$state.status is 1
                 q = $q.defer()
@@ -30,15 +29,20 @@ angular.module('HueThesis').service '$hue', class HueService
 
             @api = "http://#{ @ip }/api/#{ @user }/"
 
+            console.log @api
             $http.get( @api + "lights" ).then ( resp ) =>
 
                 lights = []
                 for k, v of resp.data
                     lights.push v
 
-                q.resolve lights
 
-                @_lights = (l.state for l in lights)
+                @states = (l.state for l in lights)
+                q.resolve lights
+                console.log "resolved", @states
+                $timeout =>
+                    console.log "boom", lights
+                    $rootScope.lights = lights
                 q
 
             , ( err ) -> q.reject err
@@ -47,14 +51,10 @@ angular.module('HueThesis').service '$hue', class HueService
 
 
 
-        @toggleAll = ->
-
-            for l, i in @_lights
-                @set i, on: ! l.on
-
-
         @set = ( n, data ) ->
-            console.log "set"
+            if not _.isNumber n then throw "First param of set must be number!"
+            if not _.isObject data then throw "Second param of set must be object!"
+
             data = @normalize n, data
 
             console.log JSON.stringify data
@@ -69,16 +69,30 @@ angular.module('HueThesis').service '$hue', class HueService
                         [ prefix, path ] = k.split '/state/'
 #                        console.log 'path', path
 #                        console.log 'v', v
-#                        console.log "prev", @_lights[ n ][ path ]
+#                        console.log "prev", @states[ n ][ path ]
 
                         if path not in ['effect']
-                            @_lights[ n ][ path ] = v
+
+                            @states[ n ][ path ] = v
 
             , ( err ) ->
                 #console.error err
 
 
         @sync()
+
+
+    toggle : ( idx, extra = {}) ->
+
+        for l, i in @states when i is idx
+            @set i, _.extend extra,
+                on: ! l.on
+
+
+    toggleAll : ->
+
+        for l, i in @states
+            @set i, on: ! l.on
 
 
 
@@ -92,11 +106,12 @@ angular.module('HueThesis').service '$hue', class HueService
 
 
             if k is 'on'
-                if v is @_lights[ n ].on
+                if v is @states?[ n ].on
                     delete data.on
 
 
-        data.transitiontime ?= 0
+        #data.transitiontime ?= 1
+
         data
 
 

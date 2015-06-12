@@ -6,26 +6,24 @@
 
   livingColors = ['LLC006', 'LLC007'];
 
-  angular.module('HueThesis').service('$hue', HueService = (function() {
+  angular.module('HueThesis').service('$timi', HueService = (function() {
     HueService.prototype.ip = '192.168.0.16';
 
     HueService.prototype.user = 'newdeveloper';
 
     HueService.prototype._lights = [];
 
-    function HueService(_, $rootScope, $timeout, $http, $q) {
+    function HueService($rootScope, $http, $q) {
       var q;
       q = $q.defer();
       this.lights = function() {
         return q.promise;
       };
       this.sync = function() {
-        console.log("syncing");
         if (q.promise.$$state.status === 1) {
           q = $q.defer();
         }
         this.api = "http://" + this.ip + "/api/" + this.user + "/";
-        console.log(this.api);
         $http.get(this.api + "lights").then((function(_this) {
           return function(resp) {
             var k, l, lights, ref, v;
@@ -35,7 +33,8 @@
               v = ref[k];
               lights.push(v);
             }
-            _this.states = (function() {
+            q.resolve(lights);
+            _this._lights = (function() {
               var j, len, results;
               results = [];
               for (j = 0, len = lights.length; j < len; j++) {
@@ -44,12 +43,6 @@
               }
               return results;
             })();
-            q.resolve(lights);
-            console.log("resolved", _this.states);
-            $timeout(function() {
-              console.log("boom", lights);
-              return $rootScope.lights = lights;
-            });
             return q;
           };
         })(this), function(err) {
@@ -57,14 +50,21 @@
         });
         return this;
       };
+      this.toggleAll = function() {
+        var i, j, l, len, ref, results;
+        ref = this._lights;
+        results = [];
+        for (i = j = 0, len = ref.length; j < len; i = ++j) {
+          l = ref[i];
+          results.push(this.set(i, {
+            on: !l.on
+          }));
+        }
+        return results;
+      };
       this.set = function(n, data) {
         var promise;
-        if (!_.isNumber(n)) {
-          throw "First param of set must be number!";
-        }
-        if (!_.isObject(data)) {
-          throw "Second param of set must be object!";
-        }
+        console.log("set");
         data = this.normalize(n, data);
         console.log(JSON.stringify(data));
         promise = $http.put(("http://" + this.ip + "/api/" + this.user + "/lights/") + (n + 1) + "/state", data);
@@ -83,7 +83,7 @@
                   v = ref1[k];
                   ref2 = k.split('/state/'), prefix = ref2[0], path = ref2[1];
                   if (path !== 'effect') {
-                    results1.push(this.states[n][path] = v);
+                    results1.push(this._lights[n][path] = v);
                   } else {
                     results1.push(void 0);
                   }
@@ -98,39 +98,8 @@
       this.sync();
     }
 
-    HueService.prototype.toggle = function(idx, extra) {
-      var i, j, l, len, ref, results;
-      if (extra == null) {
-        extra = {};
-      }
-      ref = this.states;
-      results = [];
-      for (i = j = 0, len = ref.length; j < len; i = ++j) {
-        l = ref[i];
-        if (i === idx) {
-          results.push(this.set(i, _.extend(extra, {
-            on: !l.on
-          })));
-        }
-      }
-      return results;
-    };
-
-    HueService.prototype.toggleAll = function() {
-      var i, j, l, len, ref, results;
-      ref = this.states;
-      results = [];
-      for (i = j = 0, len = ref.length; j < len; i = ++j) {
-        l = ref[i];
-        results.push(this.set(i, {
-          on: !l.on
-        }));
-      }
-      return results;
-    };
-
     HueService.prototype.normalize = function(n, data) {
-      var k, ref, v;
+      var k, v;
       for (k in data) {
         v = data[k];
         if (k === 'hue') {
@@ -142,10 +111,13 @@
           }
         }
         if (k === 'on') {
-          if (v === ((ref = this.states) != null ? ref[n].on : void 0)) {
+          if (v === this._lights[n].on) {
             delete data.on;
           }
         }
+      }
+      if (data.transitiontime == null) {
+        data.transitiontime = 0;
       }
       return data;
     };
@@ -380,4 +352,4 @@
 
 }).call(this);
 
-//# sourceMappingURL=HueService.js.map
+//# sourceMappingURL=TimingService.js.map

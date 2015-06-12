@@ -6,11 +6,15 @@
 
     <ion-content id="song-content"t>
         <ul>
-            <li ng-repeat="h in history" ng-bind="h.type"></li>
+            <li ng-repeat="h in history">
+                {{ h.type }} ({{h.confidence}})
+            </li>
         </ul>
         <div id="song-header" ng-show="song">
-            <h1>{{ :: song.title }}</h1>
-            <h2>by {{ :: song.artist }} </h2>
+            <h1>{{ song.title }}</h1>
+            <h2>by {{ song.artist }} </h2>
+            <h4>{{ song.analysis.track.tempo }} bpm </h4>
+            <h5>{{ secondsPassed }} ({{ lastTime }}) of {{ song.analysis.track.duration }}</h5>
         </div>
     </ion-content>
 
